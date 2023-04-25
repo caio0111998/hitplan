@@ -103,16 +103,14 @@
 	<h1>A nova tendência lucrativa usada pelos<br>maiores E-commerces do mundo.</h1>
 	<h2>(Pressione play e segure seu telefone horizontalmente)</h2>
 	<iframe width="760" height="515" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	<button class="green" onclick="delayButton(2000)">Quero um Aplicativo para meu E-commerce<br>(Agendar call com a hitplan)</button> <!-- Mude o tempo de delay aqui -->
-	<button class="blue" onclick="delayButton(2000)">Tenho dúvidas<br>(chamar no whatsapp)</button> <!-- Mude o tempo de delay aqui -->
-	<script>
-		function delayButton(button, time) {
-			button.disabled = true;
-			setTimeout(function() {
-				button.disabled = false;
-			}, 2000); // Tempo de delay em milissegundos. Coloque o tempo desejado aqui.
-		}
-			</script>
 
+<!-- Delay de 5 segundos para o botão aparecer -->
+	<button class="green" onclick="delayButton(5000)">Quero um Aplicativo para meu E-commerce<br>(Agendar call com a hitplan)</button> <!-- Mude o tempo de delay aqui -->
+	<button class="blue" onclick="delayButton(5000)">Tenho dúvidas<br>(chamar no whatsapp)</button> <!-- Mude o tempo de delay aqui -->
+<script>
+  setTimeout(function(){
+    document.getElementById('botao').style.display='block';
+  }, 5000); // Tempo de delay em milissegundos. Coloque o tempo desejado aqui.
+</script>
 </body>
 </html>	
