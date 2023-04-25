@@ -107,3 +107,16 @@
 	<button class="blue">Tenho algumas dúvidas (chamar no WhatsApp)</button>
 </body>
 </html>
+<button class="green" onclick="delay(this, 2000)">Botão Verde</button>
+<button class="blue" onclick="delay(this, 5000)">Botão Azul</button>
+
+<script>
+function delay(button, time) {
+  button.disabled = true; // Desabilita o botão para evitar cliques repetidos
+  setTimeout(function() {
+    button.disabled = false; // Habilita o botão novamente após o tempo de delay
+  }, time); // Tempo de delay em milissegundos. Coloque o tempo desejado aqui.
+}
+</script>
+
+<!-- OBS: Para alterar o tempo de delay, substitua o valor em milissegundos na função delay(), na linha do onclick. Por exemplo, delay(this, 3000) para 3 segundos de delay. -->
