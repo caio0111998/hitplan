@@ -47,10 +47,11 @@
 			padding: 20px 20px;
 			border: 2px solid;
 			border-radius: 10px;
-			color: white;
 			font-weight: bold;
 			font-size: 20px;
 			text-transform: uppercase;
+			text-decoration: none;
+			color: #ffffff;
 			transition: all 0.3s ease;
 			cursor: pointer;
 			width: 700px;
@@ -102,7 +103,7 @@
 </head>
 <body>
 	<div style="background-color: #8a8686; padding: 10px; text-align: center; font-family: Arial;">
-    <span style="font-size: 17px; font-weight: bold;">ESTE WEBINAR É EXCLUSIVO PARA E-COMMERCES.</span>
+    <span style="font-size: 17px; font-weight: bold;">WEBINAR DISPONIBILIZADO POR TEMPO LIMITADO.</span>
 </div>
 
 	<h1>A nova tendência lucrativa usada pelos<br>maiores E-commerces do mundo.</h1>
@@ -110,8 +111,17 @@
 <iframe src="https://fast.wistia.net/embed/iframe/jkv86asqf6" title="webinar hitplan Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" msallowfullscreen width="740" height="416"></iframe>
 <script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
 	
-        <button id="botao" class="green" style="display: none;"><a href="https://form.respondi.app/8cWKCW7N" style="text-decoration:none; color:white;">Quero um Aplicativo para meu E-commerce<br>(Agendar call com a hitplan)</a></button>
+	<button id="botao" class="green" style="display: none;"><a href="https://form.respondi.app/8cWKCW7N" style="text-decoration:none; color:white;">Quero um Aplicativo para meu E-commerce<br>(Agendar call com a hitplan)</a></button>
         <button id="botao-2" class="blue" style="display: none;"><a href="https://forms.gle/W7P26Q8sZxfomoxH7" style="text-decoration:none; color:white;">Tenho algumas dúvidas</a></button>
+
+
+<!-- Delay de 18 minutos (1080 segundos) para o botão aparecer -->
+<script>
+    setTimeout(function(){
+        document.getElementById('botao').style.display='block';
+        document.getElementById('botao-2').style.display='block';
+    }, 2000); // Tempo de delay em milissegundos. Coloque o tempo desejado aqui.
+</script>
 
 </script>
 </body>
