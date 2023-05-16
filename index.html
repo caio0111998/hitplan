@@ -30,7 +30,7 @@
 </script>
 
   <!-- Primary Meta Tags -->
-  <title>HitPlan | Marketing Estratégico</title>
+  <title>HitPlan | Seu E-commerce em outro nível!</title>
   <meta name="title" content="HitPlan">
   <meta name="description" content="O Parceiro Estratégico focado no crescimento do seu negócio">
 
@@ -152,27 +152,38 @@ form .aviso button {
       </ul>
       <a href="https://outliers.members.ticto.com.br/login" target="_blank" class="btn-login">Login</a>
     </div>
-  </header>
+ </header>
 
-  <section class="s-hero">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-xs-12 col-xl-7">
-
-        </div>
-
-        <div class="col-xs-12 col-xl-5">
-          <div class="text-hero" data-aos="fade-right">
-            <h1>TENHA UM PARCEIRO ESTRATÉGICO FOCADO NO CRESCIMENTO DO SEU NEGÓCIO</h1>
-            <p>Estratégias de Growth Marketing validadas e direcionadas para atrair clientes qualificados ao seu negócio</p>
-            <a href="https://share.hsforms.com/1ZBE7vMkGQ66pYHuY6F_UsQda907" target="_blank" class="btn-cta">Agendar reunião gratuita</a>
-          </div>
-        </div>
-
+<section class="s-hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xs-12 col-xl-7">
 
       </div>
+
+      <div class="col-xs-12 col-xl-5">
+        <div class="text-hero" data-aos="fade-right">
+          <h1><span id="headline">Soluções</span> para acelerar o crescimento do seu E-commerce...</h1>
+          <p>O foco da HitPlan é elevar o nível do seu E-commerce!</p>
+          <a href="https://share.hsforms.com/1ZBE7vMkGQ66pYHuY6F_UsQda907" target="_blank" class="btn-cta">Agendar reunião gratuita</a>
+        </div>
+      </div>
+
+
     </div>
-  </section>
+  </div>
+</section>
+
+<script>
+  var headlineWords = ["Soluções", "Tecnologias", "Inovações", "Estretégias"]; // Palavras para a mudança da Headline
+  var headlineIndex = 0;
+  var headlineElement = document.getElementById("headline");
+
+  setInterval(function() {
+    headlineIndex = (headlineIndex + 1) % headlineWords.length;
+    headlineElement.textContent = headlineWords[headlineIndex];
+  }, 2000); // Mudar a palavra a cada 2 segundos (2000 milissegundos)
+</script>
 
   <section class="s-modulos" id="modulos">
     <div class="container">
